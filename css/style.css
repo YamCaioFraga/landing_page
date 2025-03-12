@@ -134,3 +134,40 @@ Estilização do rodapé
     width: 100%;
     box-sizing: border-box;
 }
+
+/* 
+=====================
+deixando responsivo
+===================== 
+*/
+
+/*quando a tela for menor que 576px */
+@media(max-width:576px) {
+    body{
+        grid-template-columns: 1fr;
+        font-size: 18px;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: column; /* Para dispositivos móveis */
+    }
+}
+
+/* quando for para tablets ou telefones maiores que 576px e menores que 700px*/
+@media(min-width:577px) and (max-width:750px){
+    body{
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 30px;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* para computadores*/
+
